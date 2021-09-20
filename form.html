@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="formstyle.css">
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <form name='form' onsubmit="return validateForm()">
+            <h2>Registration Form</h2>
+            <div class='box'>
+                <label>Username</label>
+                <input type="text" placeholder="Name" name='name' id="name">
+                <div class="error" id="UsernameErr"></div>
+            </div>
+
+            <div class='box'>
+                <label>Email</label>
+                <input type="text" placeholder="xyz@email.com" name='email' id="email">
+                <div class="error" id="EmailErr"></div>
+            </div>
+
+            <div class='box'>
+                <label>Mobile Number</label>
+                <input type="text" placeholder="000-000-0000" name='mobile' id="mobile" maxlength="10">
+                <div class="error" id="mobileErr"></div>
+            </div>
+
+            <div class='box'>
+                <label>Country</label>
+                <select name="country" id="country">
+                  <option>Select</option>
+                  <option>India</option>
+                  <option>Thailand</option>  
+                  <option>America</option>
+                  <option>Japan</option>
+                </select>
+                <div class="error" id="countryErr"></div>
+            </div>
+
+            <div class='box'>
+                <label>Gender</label>
+                <div class="form-inline" id='gender'>
+                    <label><input type="radio" name="gender" value="Male"></input>Male</label>
+                    <label><input type="radio" name="gender" value="Female"></input>Female</label>
+                </div>
+                <div class="error" id="genderErr"></div>
+            </div>
+
+            <div class="box">
+                <input type='submit' value="Submit"/>
+            </div>
+
+            
+        </form>
+
+    </body>
+</html>
